@@ -1,0 +1,13 @@
+    <mtapp:setting
+        id="access_count_config"
+        label="<__trans phrase="Tracking">">
+        <ul>
+            <li><input type="checkbox" name="tracking" id="access_count_tacking" value="1" <TMPL_IF NAME=TRACKING>checked="checked"</TMPL_IF> /> <MT_TRANS phrase="Start Tracking your Blog"></li>
+        </ul>
+    </mtapp:setting>
+
+    <mtapp:setting
+        id="deny_ip"
+        label="<__trans phrase="Deny IP Addresses">">
+        <textarea name="deny_ip" id="deny_ip" cols="60" rows="8"><TMPL_VAR NAME=DENY_IP ESCAPE=HTML></textarea>
+    </mtapp:setting>
