@@ -41,7 +41,7 @@ MTEntries のモディファイア sort\_by に accessed\_count を指定しま�
 
 ```
 <mt:If tag="BlogEntryCount">
-    <mt:Entries sort\_by="accessed\_count" sort\_order="descend" limit="10">
+    <mt:Entries sort_by="accessed_count" sort_order="descend" limit="10">
         <mt:EntriesHeader>
 <div class="widget-recent-entries widget-archives widget">
     <h3 class="widget-header">アクセスランキング</h3>
