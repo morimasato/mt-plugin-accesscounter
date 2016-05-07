@@ -67,6 +67,13 @@ my $plugin;
                     },
                 },
             },
+            applications      => {
+                'AccessCounter' => {
+                    handler  => 'AccessCounter',
+                    script   => sub { default => 'AccessCounter.cgi' },
+                    cgi_path => sub { default => '/mt/plugins/AccessCounter' },
+                },
+            },
         },
     };
     $plugin = __PACKAGE__->new($about);
