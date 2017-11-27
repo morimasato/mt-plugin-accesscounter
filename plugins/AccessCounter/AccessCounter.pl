@@ -134,6 +134,7 @@ sub _add_tracking_tag
 
     return unless $args{blog} && $plugin->get_config_value('tracking', 'blog:' . $args{blog}->id);
     return unless $args{entry};
+    return if $args{Template}->name =~ /AMP/;
 
     my $path  = MT::ConfigMgr->instance->CGIPath;
        $path .= '/' unless $path =~ m!/$!;
